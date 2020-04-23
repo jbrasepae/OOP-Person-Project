@@ -4,12 +4,14 @@ class Person {
         this.name = name
         this.age = age
         this.gender = gender
-        this.interests = [interests] 
+        this.interests = interests
     }
+
     hello () {
 
-       console.log('Hello, my name is ' +this.name + ' and I am ' +this.age + ' years old. ' +  'My interests are ' +this.interests)
+        return('Hello, my name is ' +this.name + ' and I am ' +this.age + ' years old. ' +  'My interests are ' +this.interests)
     }
 }
-let person = new Person('Ryan',30,'male',['being a hardarse', ' agile ', 'ssd hard drives'] )
-person.hello()
+let person = new Person('Ryan',30,'male',['being a hardarse', ' agile ', 'ssd hard drives.'])
+let greeting = person.hello()
+console.log(greeting)
